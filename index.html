@@ -16,20 +16,24 @@
 <main>
     <p>Оптимизация кредита:по сумме</p>
     <h1>РАСЧЕТ ПЛАТЕЖЕЙ</h1>
+    <form id="credit" onsubmit="CalculateCredit(); return false">
+        <label for="amount">Сумма кредита</label><br>
+        <input type="text" id="amount" name="amount"/><br>
+        <label for="period">Срок кредита (в месяцах)</label><br>
+        <input type="text" id="period" name="period"/><br>
+        <label for="rate">Годовая ставка (в %)</label><br>
+        <input type="text" id="rate" name="rate"/><br>
+        <label for="month">С какого месяца?</label><br>
+        <input type="text" id="month" name="month"/><br>
+        <label for="month">С какого года?</label><br>
+        <input type="text" id="year" name="year"/><br>
+        <input type="submit" id="button1">
+    </form>
     <table id="grid">
     </table>
-    <button>Сохранить расчеты</button>
-    <button id="white">Распечатать</button>
 </main>
 <footer>
-    <p>&copy2016 Ипотечный калькулятор. Любое копирование информации запрещено.<span>Privacy</span></p>
+    <p>&copy2016 Ипотечный калькулятор.</p>
 </footer>
-<div id="modal">
-    <span id="closeModal">X</span>
-    <header>Сумма платежа</header>
-    <input type="text">
-    <input type="submit" id="save">
-</div>
-<div id="overlay"></div>
 </body>
 </html>
